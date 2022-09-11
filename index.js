@@ -11,6 +11,10 @@ app.listen(port, () => console.log(`Hello world app listening on port ${port}!`)
 app.get('/index', (req, res) => {
     console.log("Nimi:",req.query.nimi);
     res.send('Tervituse saamiseks palun kirjuta URL-i lõppu peale = märki oma nimi.');
+});
+app.get('/index', (req, res) => {
+    console.log("Nimi:",req.query.nimi);
+    res.send('Tervituse saamiseks palun kirjuta URL-i lõppu peale = märki oma nimi.');
     res.send('Tere ' + req.query.nimi);
 });
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`))
